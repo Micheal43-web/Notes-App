@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Notes</title>
+    <link rel="stylesheet" href="Notes.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a class="active" href="#">Your Notes</a></li>
+        </ul>
+        <img src="note.png">
+    </nav>
+    <div class="container">
+        <div class="top">
+            <input type="search" placeholder="Search By Title" id="search"
+            onkeyup="search()">
+            <button id="create">New Note</button>
+        </div>
+        <div id="notes">
+
+        </div>
+
+        <div id="form" class="form hide">
+            <button id="exit">X</button>
+            <h1>New Note</h1>
+            <input id="title" type="text" placeholder="Title...">
+            <textarea id="note" type="text" placeholder="Note..."></textarea>
+            <button id="add">Add Note</button>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
